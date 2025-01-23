@@ -1,9 +1,17 @@
 import React from "react";
+import Header from "../components/header";
+import Footer from "../components/footer";
 
-export default function home() {
+function home() {
     return (
         <>
-            <h1 className="title">Hello! I'm Laravel Inertia React.</h1>
+            <Header />
+            <div className="container h-28 mx-auto">
+                <h1 className="text-2xl text-center font-bold">Header</h1>
+            </div>
+            <Footer />
         </>
     );
 }
+
+export default home;
